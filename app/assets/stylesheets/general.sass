@@ -1,0 +1,30 @@
+html
+  height: 100%
+body
+  min-height: 100%
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  flex-direction: column
+  background: white
+  .main-wrapper
+    flex: 1
+  &.menu-opened
+    overflow: hidden
+
+@each $header, $font-size in (h1: 28px, h2: 24px, h3: 22px, h4: 20px, h5: 18px, h6: 16px)
+  #{$header}, .#{$header}
+    font-size: $font-size
+
+.small
+  font-size: 0.75rem
+.smaller
+  font-size: 0.875rem
+.regular
+  font-size: 1rem
+.larger
+  font-size: 1.125rem
+.large
+  font-size: 1.25rem

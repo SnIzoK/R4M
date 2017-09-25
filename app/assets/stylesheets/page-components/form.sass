@@ -1,0 +1,55 @@
+form
+  position: relative
+  padding: 30px
+  .input-field
+    position: relative
+    input, textarea, select
+      font-size: 14px
+      margin-bottom: 20px
+      color: #22292d
+      display: block
+      padding: 10px 20px
+      width: 100%
+      border: 1px solid white
+      outline: none
+      background-color: transparent
+      &:focus
+        outline: none
+    span.default
+      display: block
+    span.error
+      display: none
+    &.error
+      input, textarea, select
+        color: #c1272d
+        border: 1px solid #c1272d
+        pointer-events: none
+      span.default
+        display: none
+      span.error
+        display: block
+    
+    span
+      font-size: 18px
+      color: #c1272d
+    
+    button.svg-button
+      background-color: #c1272d
+      float: right
+      cursor: pointer
+      width: 60px
+      height: 60px
+      svg
+        width: 60px
+        height: 60px
+        // padding: 5px
+        fill: white
+
+  +breakpoint(medium down)
+    padding: 0
+    .input-field
+      margin-top: 100px
+      
+  +breakpoint(small only)
+    .input-field
+      margin-top: 50px

@@ -1,0 +1,84 @@
+// .header-container
+//   position: fixed
+//   padding: 16px 30px
+//   width: 100%
+//   background: transparent
+//   display: -webkit-flex
+//   display: -moz-flex
+//   display: -ms-flex
+//   display: -o-flex
+//   display: flex
+//   justify-content: space-between
+//   +transition-property(transform)
+//   +transition-duration(1s)
+//   +translate(0,-100%)
+//   z-index: 11
+//   &.scrolled, &.visible
+//     +translate(0,0)
+//   @media #{$small-only}
+//   @media #{$xxlarge-up}
+//   .logo
+//     width: 70px
+//     line-height: 1
+//     svg
+//       width: 100%
+//       path
+//         +transition(0.5s)
+//       path.heart
+//         transform-origin: center
+//         fill: $pink600
+//       path.outline
+//         fill: white
+//     &:hover
+//       svg
+//         path.heart
+//           animation: heartbeat 1s infinite
+//     @media #{$small-only}
+//       width: 50px
+//   .logo, .right-part
+//     align-self: center
+//   .right-part
+//     margin-left: auto
+//     .small
+//       @extend %istok
+//       color: $brown800
+//       text-transform: uppercase
+//       letter-spacing: 2px
+//       padding: 20px
+//       +transition(0.5s)
+//       @media #{$small-only}
+//         display: none
+//       &:hover
+//         color: $pink600
+
+//   //     H a m b u r g e r
+  
+//   .hamburger
+//     margin-left: 4em
+//     .hamburger-box
+//       width: 32px
+//       cursor: pointer
+
+//     .hamburger-inner
+//       width: 100%
+//       border-radius: 0
+//       height: 2px
+//       background: $brown800
+//       &:before, &:after
+//         width: 100%
+//         background: $brown800
+//         height: 2px
+//         border-radius: 0
+    
+//     @media #{$large-up}
+//       &.is-active
+//         .hamburger-inner
+//           background: white
+//           &:before, &:after
+//             background: white
+//         &:hover
+//           .hamburger-inner
+//             background: $pink600
+//             &:before, &:after
+//               background: $pink600
+

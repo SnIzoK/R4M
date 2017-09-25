@@ -1,0 +1,25 @@
+.main-page
+  .video-background
+    .video-foreground
+      iframe#bg-video src="https://www.youtube.com/embed/qls0BpEE27s?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=qls0BpEE27s" frameborder="0" allowfullscreen="1"
+
+  .logo = inline_svg "svg/logo.svg"
+  .content-wrap
+    .row
+      .large-6.columns
+        .text
+          h1 The swarm is headed towards us!
+          p Satoshi Nakamoto
+      .large-6.columns
+        .input-box
+          form name="form"
+            .input-field
+              span.default id
+              span.error uncorect
+              input#id name="id" 
+            
+              span.default password
+              span.error uncorect
+              input#password name="password" type="password"
+
+              button.svg-button = inline_svg "svg/ic_keyboard_arrow_right_black_24px.svg"

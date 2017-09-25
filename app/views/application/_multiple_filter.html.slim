@@ -1,0 +1,34 @@
+.row.columns-left.multiple-filter-container
+  .columns
+    .video-filter
+      select.select-filter data-prop-name="data-effect"
+        option value="" data-display="Ефект" весь дим
+        option value="1" Some option
+        option value="2" Another option
+        option value="3" A option
+        option value="4" Potato
+      select.select-filter data-prop-name="data-place"
+        option value="" data-display="Місце" всі заклади
+        option value="1" Some option
+        option value="2" Another option
+        option value="3" A option
+        option value="4" Potato
+      select.select-filter data-prop-name="data-event"
+        option value="" data-display="Подія" всі концерти
+        option value="1" Some option
+        option value="2" Another option
+        option value="3" A option
+        option value="4" Potato
+
+      .videos-qnty
+        span 79
+        | відео
+
+  .columns.large-4
+    .video-container.target-block data-effect="1" data-place="1" data-event="1" style="background-image: url(#{asset_path('photo/main-banner-bg-3.jpg')})"
+
+  .columns.large-4
+    .video-container.target-block data-effect="2" data-place="2" data-event="2" style="background-image: url(#{asset_path('photo/main-banner-bg-4.jpg')})"
+
+  .columns.large-4
+    .video-container.target-block data-effect="1" data-place="2" data-event="3" style="background-image: url(#{asset_path('photo/main-banner-bg-5.jpg')})"
