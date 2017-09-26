@@ -1,7 +1,9 @@
 .main-page
   .video-background
-    .video-foreground
-      iframe#bg-video src="https://www.youtube.com/embed/qls0BpEE27s?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=qls0BpEE27s" frameborder="0" allowfullscreen="1"
+    video autoplay="autoplay" loop="loop" muted="muted"
+      
+      source src=asset_path('bg-movie.mov') type="video/mov"
+
 
   .logo = inline_svg "svg/logo.svg"
   .content-wrap

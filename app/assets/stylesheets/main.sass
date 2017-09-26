@@ -6,29 +6,39 @@
   overflow: hidden
   // font-family: tornado
 
-  .bg-video-container
-    position: absolute
-    width: 100%
-    height: 100%
-    z-index: -1
-  #bg-video
-    +fullsize
-
   .video-background
-    +fullsize
-    z-index: -1
-    &:after
-      content: ''
-      display: block
-      +fullsize
-      background: rgba(white, .3)
-  .video-foreground, .video-background iframe
-    +fullsize
-    pointer-events: none
- 
     width: 100%
     height: 100%
-    +scale(1.3)
+
+    video
+      +xy-align
+      min-width: 100%
+      min-height: 100%
+      width: auto
+      height: auto
+  // .bg-video-container
+  //   position: absolute
+  //   width: 100%
+  //   height: 100%
+  //   z-index: -1
+  // #bg-video
+  //   +fullsize
+
+  // .video-background
+  //   +fullsize
+  //   z-index: -1
+  //   &:after
+  //     content: ''
+  //     display: block
+  //     +fullsize
+  //     background: rgba(white, .3)
+  // .video-foreground, .video-background iframe
+  //   +fullsize
+  //   pointer-events: none
+ 
+  //   width: 100%
+  //   height: 100%
+  //   +scale(1.3)
     
   .logo
     +x-align
