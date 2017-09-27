@@ -16,6 +16,7 @@
       min-height: 100%
       width: auto
       height: auto
+
   // .bg-video-container
   //   position: absolute
   //   width: 100%
@@ -42,7 +43,8 @@
     
   .logo
     +x-align
-    padding-top: 100px
+    top: 10%
+    // padding-top: 100px
     svg
       width: 320px
 
@@ -70,13 +72,15 @@
         color: rgba(#22292d, 0.1)
         font-size: 200px
   +breakpoint(medium only)
+    .logo
+      top: 8%
     iframe
       +scale(2.3)
   +breakpoint(small only)
     .logo
-      padding-top: 20px
-
+      top: 8%
     .content-wrap
+      padding-top: 100px
       .text
         h1
           font-size: 38px
