@@ -1,14 +1,53 @@
-// .popup-wrapper
+.popup-wrapper
+  display: none
+  position: fixed
+  top: 50%
+  left: 50%
+  z-index: 1000
+  background: #a8b4b7
+  width: 100%
+  height: 100%
+  +translate(-50%,-50%)
+  &.visible
+    display: block
+  
+  .close-popup
+    position: absolute
+    top: 30px
+    right: 30px
+    border: 2px solid #c1272d
+    height: 28px
+    cursor: pointer
+    +transition(.3s)
+    svg
+      width: 25px
+      height: 25px
+    &:hover
+      background: #c1272d
+      svg
+        fill: white
 
-//   position: fixed
-//   width: 100%
-//   height: auto
-//   min-height: 100vh
-//   background: rgba($brown900, .97)
-//   z-index: 9999
-//   opacity: 0
-//   pointer-events: none
-//   +transition(0.25s)
+  .contact-us-form-wrap
+    +xy-align
+    width: 60% 
+    form
+      padding: 0
+
+    .title
+      font-size: 20px
+      color: white
+      text-transform: uppercase
+      margin-bottom: 20px
+
+    #name
+      margin-bottom: 16px
+
+
+
+
+
+
+
 
 //   .close-popup
 //     position: absolute

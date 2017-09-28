@@ -1,0 +1,26 @@
+.popup-wrapper
+  .close-popup = inline_svg "svg/close.svg"
+  
+  .row
+    .columns.medium-10.medium-centered.large-8
+
+      .contact-us-form-wrap
+        form name="form"
+          .title Contact us
+          .row
+            .medium-6.columns
+              .input-field
+                span Name
+                input#name name="name" 
+              
+                span E-mail
+                input#E-mail name="E-mail"
+
+            .medium-6.columns
+              .input-field
+                span Note
+                textarea#note rows="6" name="note"
+          .clearfix
+            button.svg-button = inline_svg "svg/ic_keyboard_arrow_right_black_24px.svg"
+
+        

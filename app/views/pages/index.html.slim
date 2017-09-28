@@ -7,6 +7,7 @@
 
   .logo = inline_svg "svg/logo.svg"
   .content-wrap
+    .btn.popup-btn contact us
     .row
       .large-6.columns
         .text
@@ -15,7 +16,7 @@
       .large-6.columns
         .input-box
           form name="form"
-            .input-field
+            .input-field.disable
               span.default id
               span.error uncorect
               input#id name="id" 
@@ -24,4 +25,4 @@
               span.error uncorect
               input#password name="password" type="password"
 
-              button.svg-button = inline_svg "svg/ic_keyboard_arrow_right_black_24px.svg"
+            button.svg-button = inline_svg "svg/ic_keyboard_arrow_right_black_24px.svg"
