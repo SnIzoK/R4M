@@ -10,13 +10,14 @@
 #= require plugins/jquery.appear
 #= require plugins/clickout
 #= require plugins/datepick
-#= require plugins/form
 #= require plugins/jquery.bxslider
 #= require plugins/jquery.scrolldelta
 #= require plugins/lightgallery.min
 # require plugins/scroll-banner
 #= require plugins/selectize.min
 #= require plugins/parallax.min
+#= require plugins/jquery.validate
+#= require plugins/form
 
 #     I N I T I A L I Z E
 

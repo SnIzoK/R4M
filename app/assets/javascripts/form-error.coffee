@@ -1,6 +1,8 @@
 $(document).ready ->
-  $('.svg-button').on 'click', (e)->
+  $('.svg-button.prevent').on 'click', (e)->
     e.preventDefault()
 
-    if $('.input-field').hasClass('disable')
-      $('.input-field').addClass('error')
+    $('.input-field').each ->
+
+      if $(this).hasClass('disable')
+        $(this).addClass('error')

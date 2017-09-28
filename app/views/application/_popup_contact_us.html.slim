@@ -5,22 +5,22 @@
     .columns.medium-10.medium-centered.large-8
 
       .contact-us-form-wrap
-        form name="form"
+        form.validable
           .title Contact us
           .row
             .medium-6.columns
               .input-field
                 span Name
-                input#name name="name" 
-              
+                input#name name="name"
+              .input-field
                 span E-mail
-                input#E-mail name="E-mail"
+                input#email name="email"
 
             .medium-6.columns
               .input-field
                 span Note
                 textarea#note rows="6" name="note"
           .clearfix
-            button.svg-button = inline_svg "svg/ic_keyboard_arrow_right_black_24px.svg"
+            button.svg-button type="submit" = inline_svg "svg/ic_keyboard_arrow_right_black_24px.svg"
 
         
