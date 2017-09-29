@@ -10,7 +10,8 @@
   - label_text = k.to_s.humanize if label_text.blank?
   - label_text += ":"
   p
-    = label_text
+    b
+      = label_text
   p
     - if v.is_a?(Paperclip::Attachment)
       a href=(@host+v.url)
