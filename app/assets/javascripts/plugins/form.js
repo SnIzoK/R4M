@@ -35,7 +35,18 @@ $(document).ready(function() {
           required: true,
           email: true
         },
-      }
+      },
+        submitHandler: function(form, e){
+            e.preventDefault()
+            var $form = $(form)
+            var url = $form.attr("data-action") || $form.attr("action")
+            var data = $form.serializeArray()
+            var method = $form.attr("method")
+            $form.ajaxSubmit({
+                url: url,
+
+            })
+        }
   });
   })
 

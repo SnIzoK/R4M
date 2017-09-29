@@ -1,9 +1,8 @@
 class PagesController < ApplicationController
+  caches_page :index
 
   def index
-  end
-
-  def about_us
+    set_page_metadata(:home)
   end
 
 end
