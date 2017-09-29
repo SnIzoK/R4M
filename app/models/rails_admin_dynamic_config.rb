@@ -80,9 +80,9 @@ module RailsAdminDynamicConfig
         end
 
         config.navigation_static_links = {
-           mailchimp: "/admin/mailchimp",
-           locales: "/file_editor/locales",
-           site_data: "/file_editor/site_data.yml"
+           #mailchimp: "/admin/mailchimp",
+           #locales: "/file_editor/locales",
+           #site_data: "/file_editor/site_data.yml"
         }
 
         #config.include_models Attachable::Asset
