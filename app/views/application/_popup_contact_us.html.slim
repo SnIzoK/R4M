@@ -5,7 +5,7 @@
     .columns.medium-10.medium-centered.large-8
 
       .contact-us-form-wrap
-        form.validable
+        form.validable data-action=contact_request_path data-resource-name="contact_request" method="post"
           .title Contact us
           .row
             .medium-6.columns
@@ -19,7 +19,7 @@
             .medium-6.columns
               .input-field
                 span Note
-                textarea#note rows="6" name="note"
+                textarea#note rows="6" name="comment"
           .clearfix
             button.svg-button type="submit" = inline_svg "svg/ic_keyboard_arrow_right_black_24px.svg"
 

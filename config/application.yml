@@ -5,12 +5,12 @@ smtp_server: "smtp.gmail.com"
 smtp_gmail_user_name: "support@voroninstudio.eu"
 smtp_gmail_domain: "voroninstudio.eu"
 smtp_gmail_password: "VS-support#201604"
-smtp_default_from: "support@voroninstudio.eu"
 
 # ========================
 # HOST
 # ========================
 development.host: "localhost:3000"
+development.host_with_port: "http://localhost:3000"
 
 # ========================
 # TINYPNG
@@ -20,8 +20,10 @@ tinypng_key: "JFFZudld0q3AJkZogWZmy5d0wl-1My53"
 # ========================
 # DATABASE
 # ========================
-default_adapter: "*sqlite"
-database: "db/development.sqlite3"
+default_adapter: "*postgres"
+database: "r4m_development"
+postgres_user: "postgres"
+postgres_password: "postgres"
 # ========================
 # DEVISE
 # ========================
@@ -30,17 +32,17 @@ devise_secret_key: '96be7153c9de8c94b0220812b4cb5b46aa823fa37548f23f27b9eef262dd
 # ========================
 # SECRET_KEY
 # ========================
-SECRET_KEY_BASE:
 
 # ========================
 # GOOGLE MAPS
 # ========================
 GOOGLE_MAPS_API_KEY: "AIzaSyAvkI36T-T6xJe8Qif7QkbQ1xvTl8Ha_9o"
-#file_editor_base_dir: "/media/data/projects/ekran/config"
+file_editor_base_dir: "config"
 
 
 # ========================
-# MAILCHIMP
+# Instagram API
 # ========================
-MAILCHIMP_API_KEY: "70e7e349e5073831ae7f31fdd470701e-us11"
-MAILCHIMP_LIST_ID: "3cb6a1b126"
+instagram.client_id: "af9cce9d9c294c03a85576505129bf31"
+instagram.client_secret: "71e3265f69f14b87b72bf134de59805a"
+instagram.access_token: "5540814960.d90570a.8f9c72cc8f214898a6481ee2548cc1ce"
