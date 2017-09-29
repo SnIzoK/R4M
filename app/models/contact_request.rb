@@ -3,7 +3,7 @@ class ContactRequest < ActiveRecord::Base
 
   include Cms::Notifier
 
-  validates_presence_of :name, :phone, :email
+  validates_presence_of :name, :email
 
   extend Cms::FormAttributesHelper
 

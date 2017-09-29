@@ -8,20 +8,8 @@ class ApplicationMailer < ActionMailer::Base
     to
   end
 
-  def new_vacancy_request(vacancy_request)
-    new_request(vacancy_request)
-  end
-
   def new_contact_request(contact_request)
     new_request(contact_request)
-  end
-
-  def new_faq_question_request(faq_question_request)
-    new_request(faq_question_request)
-  end
-
-  def new_order_request(order_request)
-    new_request(order_request)
   end
 
   def new_request(obj)

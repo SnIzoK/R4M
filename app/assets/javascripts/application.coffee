@@ -16,8 +16,10 @@
 # require plugins/scroll-banner
 #= require plugins/selectize.min
 #= require plugins/parallax.min
-#= require plugins/jquery.validate
+#= require plugins/jquery.validate.min
 #= require plugins/form
+#= require jquery-form/dist/jquery.form.min
+#= require plugins/objectify_form
 
 #     I N I T I A L I Z E
 

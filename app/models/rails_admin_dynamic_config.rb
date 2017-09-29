@@ -85,7 +85,7 @@ module RailsAdminDynamicConfig
            site_data: "/file_editor/site_data.yml"
         }
 
-        config.include_models Attachable::Asset
+        #config.include_models Attachable::Asset
 
 
         #
@@ -163,22 +163,22 @@ module RailsAdminDynamicConfig
           field :priority
         end
 
-        config.include_models Attachable::Asset
-
-        config.model Attachable::Asset do
-          navigation_label_key(:assets, 1)
-          field :data
-          watermark_position_field(:data)
-          field :sorting_position
-          field :translations, :globalize_tabs
-        end
-
-        config.model_translation Attachable::Asset do
-          field :locale, :hidden
-          field :data_alt
-          field :youtube_video_id
-          field :vimeo_video_id
-        end
+        # config.include_models Attachable::Asset
+        #
+        # config.model Attachable::Asset do
+        #   navigation_label_key(:assets, 1)
+        #   field :data
+        #   watermark_position_field(:data)
+        #   field :sorting_position
+        #   field :translations, :globalize_tabs
+        # end
+        #
+        # config.model_translation Attachable::Asset do
+        #   field :locale, :hidden
+        #   field :data_alt
+        #   field :youtube_video_id
+        #   field :vimeo_video_id
+        # end
 
 
         config.include_models User
@@ -189,27 +189,27 @@ module RailsAdminDynamicConfig
           field :password_confirmation
         end
 
-        config.include_models Cms::Tag, Cms::Tagging
-
-        config.model Cms::Tag do
-          navigation_label_key(:tags, 1)
-          field :translations, :globalize_tabs
-          field :blog_articles
-        end
-
-        config.model_translation Cms::Tag do
-          field :locale, :hidden
-          field :name
-          field :url_fragment do
-            help do
-              I18n.t("admin.help.#{name}")
-            end
-          end
-        end
-
-        config.model Cms::Tagging do
-          visible false
-        end
+        # config.include_models Cms::Tag, Cms::Tagging
+        #
+        # config.model Cms::Tag do
+        #   navigation_label_key(:tags, 1)
+        #   field :translations, :globalize_tabs
+        #   field :blog_articles
+        # end
+        #
+        # config.model_translation Cms::Tag do
+        #   field :locale, :hidden
+        #   field :name
+        #   field :url_fragment do
+        #     help do
+        #       I18n.t("admin.help.#{name}")
+        #     end
+        #   end
+        # end
+        #
+        # config.model Cms::Tagging do
+        #   visible false
+        # end
 
         # ===================================================
         # Requests
