@@ -124,4 +124,27 @@ form.validable
         margin-right: 0.625rem
         margin-left: 0.625rem
 
-  
+
+
+@media only screen and (min-width: 701px) and (max-width: 767px) and (orientation: landscape)
+  #login-form
+    .input-field
+      margin-top: 60px
+  .main-page
+    overflow-y: auto
+    .video-background
+      position: absolute
+    .content-wrap
+      top: 120px
+      left: 0
+      +transform(none)
+      position: relative
+      margin: 0 auto
+      max-width: 370px
+
+      .popup-btn
+        width: calc(100% - 30px)
+
+      .text
+        h1
+          font-size: 20px
