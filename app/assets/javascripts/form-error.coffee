@@ -1,8 +1,9 @@
 $(document).ready ->
-  $('.svg-button.prevent').on 'click', (e)->
-    e.preventDefault()
 
-    $('.input-field').each ->
+$(document).on "submit", "#login-form", (e)->
+  e.preventDefault()
+  $form = $(this)
+  $error_message = $form.find(".form-error-message")
 
-      if $(this).hasClass('disable')
-        $(this).addClass('error')
+  if !$error_message.length
+    $form.prepend("<div class='form-error-message'>invalid login or password</div>")
