@@ -52,6 +52,7 @@ $(document).ready(function() {
             })
 
             $form.closest(".popup-wrapper").removeClass("visible")
+            alert("Thanks for message. We will contact you shortly")
         }
   });
   })
