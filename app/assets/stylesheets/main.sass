@@ -88,12 +88,20 @@ form.validable
       .input-box
         padding-top: 220px
 
-  @media only screen and (max-width: 480px)
+  @media only screen and (max-width: 480px) and (min-width: 401px)
+    .logo
+      top: 3%
     .content-wrap
+      top: 40%
+
       .text
         top: 15%
       .popup-btn
-        width: 100%
+        width: calc(100% - 20px)
+
+
+
+
 
   @media only screen and (max-width: 400px)
     .logo
