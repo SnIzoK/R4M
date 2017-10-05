@@ -5,26 +5,29 @@
       source src=asset_path('bg-movie.mp4') type="video/mp4"
 
 
-  .logo = inline_svg "svg/logo.svg"
-  .content-wrap
+  .logo-section
+    .logo = inline_svg "svg/logo.svg"
+  .content-section
+    .content-wrap
+      .row
+
+        .large-6.columns
+          .text
+            h1 The swarm is headed towards us!
+            p Satoshi Nakamoto
+
+        .large-6.columns
+          .input-box
+            form#login-form name="form"
+              .input-field.disable
+                span.default Id
+                span.error incorect
+                input#id name="id"
+
+                span.default Password
+                span.error incorect
+                input#password name="password" type="password"
+
+              button.svg-button.prevent = inline_svg "svg/ic_keyboard_arrow_right_black_24px.svg"
+  .button-section
     .btn.popup-btn contact us
-    .row
-
-      .large-6.columns
-        .text
-          h1 The swarm is headed towards us!
-          p Satoshi Nakamoto
-
-      .large-6.columns
-        .input-box
-          form#login-form name="form"
-            .input-field.disable
-              span.default Id
-              span.error incorect
-              input#id name="id" 
-            
-              span.default Password
-              span.error incorect
-              input#password name="password" type="password"
-
-            button.svg-button.prevent = inline_svg "svg/ic_keyboard_arrow_right_black_24px.svg"
