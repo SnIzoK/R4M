@@ -12,29 +12,30 @@ form.validable
     top: 0
     right: 15px
 
-.logo-section
-  min-height: 30vh
-  position: relative
-  overflow: hidden
-.content-section
-  position: relative
-  min-height: 35vh
-  overflow: hidden
-  .content-wrap
+.main-wrapper
+  .logo-section
+    min-height: 30vh
     position: relative
-    top: 0
-    left: 0
-    +transform(none)
+    overflow: hidden
+  .content-section
+    position: relative
+    min-height: 35vh
+    overflow: hidden
+    .content-wrap
+      position: relative
+      top: 0
+      left: 0
+      +transform(none)
 
-  .text
-    position: relative !important
-.button-section
-  position: relative
-  min-height: 30vh
-  text-align: center
+    .text
+      position: relative !important
+  .button-section
+    position: relative
+    min-height: 30vh
+    text-align: center
 
-  .btn
-    display: inline-block
+    .btn
+      display: inline-block
 
 
 .main-page
@@ -55,11 +56,11 @@ form.validable
     position: absolute
 
     video
-      +xy-align
-      min-width: 100%
-      min-height: 100%
-      width: auto
-      height: auto
+      //+xy-align
+      //min-width: 100%
+      //min-height: 100%
+      //width: auto
+      //height: auto
   .logo
     +x-align
     top: 10%
